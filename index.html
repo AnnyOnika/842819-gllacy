@@ -28,31 +28,11 @@
     </nav>
     <ul class="user-navigation">
       <li><a href="search.html"><span class="search">Поиск</span></a></li>
-      <section class="modal modal-search">
-        <h2 class="visyally-hidden">Форма поиска</h2>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <input type="search" id="user-search" name="" placeholder="Что ищем?">
-          <input type="submit" name="search" class="submit" placeholder="Поиск">
-        </form>
-      </section>
-      <li><a href="login.html"><span class="login-link">Вход</span></a>
-        <section class="modal modal-link">
-          <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <input type="email" name="login" id="user-email" placeholder="Электронная почта">
-            <br>
-            <input type="password" name="password" id="user-password" placeholder="Пароль">
-            <br>
-            <button class="button link-button" type="submit">Войти</button>
-            <p><a class="restore" href="#">Забыли пароль?</a></p>
-            <p><a class="check-in" href="#">Новая регистрация</a></p>
-          </form>
-        </section>
-      </li>
+      <li><a href="login.html"><span class="login-link">Вход</span></a></li>
       <li><a href="basket.html"><span class="basket">Корзина</span></a>
-      <section class="basket product-basket">
-        <h2 class="visually-hidden">Карзина с мороженым</h2>
-      </section>
+        <section class="basket product-basket">
+          <h2 class="visually-hidden">Карзина с мороженым</h2>
+        </section>
       </li>
     </ul>
   </header>
@@ -63,22 +43,25 @@
         <a href="tel:8812450-25-25"><b>8 812 450-25-25</b></a>
       </p>
       <!--первый слайдер-->
-      <div class="slider-1">
-        <img src="img/slider-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
-        <p class="name-slider-1">Крем-брюле и пломбир с малиновым джемом</p>
-        <!--кнопка Давайте оба-->
-      </div>
-      <!--второй слайдер-->
-      <div class="slider-2">
-        <img src="img/slider-2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
-        <p class="name-slider-2">Шоколадный пломбир и лимонный сорбет</p>
-      </div>
-      <!--кнопка Давайте оба-->
-      <!--третий слайдер-->
-      <div class="slider-3">
-        <img src="img/slider-3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
-        <p class="name-slider-3">Пломбир с помадкой и клубничный щербет</p>
-      </div>
+      <ul class="slider-list">
+        <li class="slider-1">
+          <img src="img/slider-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
+          <p class="name-slider-1">Крем-брюле и пломбир с малиновым джемом</p>
+          <button class="button button-slider" type="button">Давайте оба!</button>
+        </li>
+        <!--второй слайдер-->
+        <li class="slider-2">
+          <img src="img/slider-2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
+          <p class="name-slider-2">Шоколадный пломбир и лимонный сорбет</p>
+          <button class="button button-slider" type="button">Давайте оба!</button>
+        </li>
+        <!--третий слайдер-->
+        <li class="slider-3">
+          <img src="img/slider-3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
+          <p class="name-slider-3">Пломбир с помадкой и клубничный щербет</p>
+          <button class="button button-slider" type="button">Давайте оба!</button>
+        </li>
+      </ul>
     </div>
     <section class="banner">
       <div class="banner-raspberries">
@@ -127,7 +110,6 @@
         </li>
       </ul>
     </section>
-    </article>
     <section class="feature">
       <h2 class="visyally-hidden">Преиумущества</h2>
       <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
@@ -163,26 +145,13 @@
 и офлайн-магазина:</h2>
       <p><img src="img/map-pin.jpg" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
     </section>
-    <section class="feedback">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <h2>Мы обязательно вам ответим!</h2>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <input type="text" name="name" id="feedback-name" value="" placeholder="Как вас зовут?">
-        </br>
-        <input type="email" name="email" id="feedback-email" value="" placeholder="Ваша почта для ответа?">
-        <br>
-        <textarea name="comments" cols="20" rows="4" placeholder="Напишите что нибудь..."></textarea>
-        <br>
-        <button class="button feedback-button" type="submit">Отправить</button>
-      </form>
-    </section>
   </main>
   <footer class="main-footer">
     <ul class="footer-social">
-      <li><a class="social-button" href="#">Твиттер</a></li>
-      <li><a class="social-button" href="#">Инстаграмм</a></li>
-      <li><a class="social-button" href="#">Фейсбук</a></li>
-      <li><a class="social-button" href="#">Вконтакте</a></li>
+      <li><a class="social-button button-twitter" href="#">Твиттер</a></li>
+      <li><a class="social-button button-ins" href="#">Инстаграмм</a></li>
+      <li><a class="social-button button-fb" href="#">Фейсбук</a></li>
+      <li><a class="social-button button-vk" href="#">Вконтакте</a></li>
     </ul>
     <ul class="more-info">
       <li><a href="#"><b>Для поставщиков</b></a></li>
@@ -195,6 +164,41 @@
       <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
     </div>
   </footer>
+  <!--модальное окно поиска-->
+  <section class="modal modal-search">
+    <h2 class="visyally-hidden">Форма поиска</h2>
+    <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+      <input type="search" id="user-search" placeholder="Что ищем?">
+      <input type="submit" name="search" class="submit" value="Поиск">
+    </form>
+  </section>
+  <!--Форма входа в личный кабинет-->
+  <section class="modal modal-link">
+    <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <input type="email" name="login" id="user-email" placeholder="Электронная почта">
+      <br>
+      <input type="password" name="password" id="user-password" placeholder="Пароль">
+      <br>
+      <button class="button link-button" type="submit">Войти</button>
+      <p><a class="restore" href="#">Забыли пароль?</a></p>
+      <p><a class="check-in" href="#">Новая регистрация</a></p>
+    </form>
+  </section>
+  <!--Форма обратной связи-->
+  <section class="feedback">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <h2>Мы обязательно вам ответим!</h2>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <input type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
+      <br>
+      <input type="email" name="email" id="feedback-email" value="" placeholder="Ваша почта для ответа?">
+      <br>
+      <textarea name="comments" cols="20" rows="4" placeholder="Напишите что нибудь..."></textarea>
+      <br>
+      <button class="button feedback-button" type="submit">Отправить</button>
+    </form>
+  </section>
 </body>
 
 </html>
