@@ -16,12 +16,32 @@
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
+      </nav>
       <ul class="user-navigation">
         <li><a href="#"><span class="search">Поиск</span></a></li>
         <li><a href="#"><span class="login-link">Вход</span></a></li>
-        <li><a href="#"><span class="basket">Корзина</span></a></li>
+        <li><a href="#"><span class="basket">Корзина</span></a>
+          <table class="product-basket-list">
+           <tr class="products-basket-item">
+             <td><button class="modal-close" type="button">Закрыть</button></td>
+             <td><img src="img/basket-icecream-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+             <td>Пломбир с апельсиновым джемом</td>
+             <td>1,5 кг x <span>200 руб.</span></td>
+             <td>300 руб.</td>
+           </tr>
+           <tr class="products-basket-item-item">
+             <td><button class="modal-close" type="button">Закрыть</button></td>
+             <td><img src="img/basket-icecream-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+             <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+             <td>1,5 кг x <span>300 руб.</span></td>
+             <td>450 руб.</td>
+           </tr>
+         </table>
+         <p><b>Итого: 750р.</b></p>
+         <a class="button basket-button" href="#">Оформить заказ</a>
+        </li>
       </ul>
-    </nav>
+    
   </header>
   <main class="container">
     <p>С 10 до 20 ежедневно<br>
@@ -35,7 +55,7 @@
     <h1>Сливочное мороженое</h1>
     <section class="filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
-      <!--Здесь бцдет форма-->
+      <!--Здесь будет форма-->
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Каталог товаров</h2>

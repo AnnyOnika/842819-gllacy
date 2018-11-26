@@ -8,20 +8,53 @@
 
 <body>
   <header class="main-header">
-    <a class="main-header-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
-      </a>
+    <a class="main-header-logo">
+      <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
+    </a>
     <nav class="main-navigation">
       <ul class="site-navigation">
-        <li><a href="#">Каталог</a></li>
+        <li><a href="catalog.html">Каталог</a>
+          <ul class="sub-menu">
+            <li><a href="#">Новинки</a></li>
+            <li><a href="#">Сливочное</a></li>
+            <li><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
-      <ul class="user-navigation">
-        <li><a href="#"><span class="search">Поиск</span></a></li>
-        <li><a href="#"><span class="login-link">Вход</span></a></li>
-        <li><a href="#"><span class="basket">Корзина</span></a></li>
-      </ul>
     </nav>
+    <ul class="user-navigation">
+      <li><a href="search.html"><span class="search">Поиск</span></a></li>
+      <section class="modal modal-search">
+        <h2 class="visyally-hidden">Форма поиска</h2>
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <input type="search" id="user-search" name="" placeholder="Что ищем?">
+          <input type="submit" name="search" class="submit" placeholder="Поиск">
+        </form>
+      </section>
+      <li><a href="login.html"><span class="login-link">Вход</span></a>
+        <section class="modal modal-link">
+          <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <input type="email" name="login" id="user-email" placeholder="Электронная почта">
+            <br>
+            <input type="password" name="password" id="user-password" placeholder="Пароль">
+            <br>
+            <button class="button link-button" type="submit">Войти</button>
+            <p><a class="restore" href="#">Забыли пароль?</a></p>
+            <p><a class="check-in" href="#">Новая регистрация</a></p>
+          </form>
+        </section>
+      </li>
+      <li><a href="basket.html"><span class="basket">Корзина</span></a>
+      <section class="basket product-basket">
+        <h2 class="visually-hidden">Карзина с мороженым</h2>
+      </section>
+      </li>
+    </ul>
   </header>
   <main class="container">
     <h1 class="visyally-hidden">Магазин мороженого Глейси</h1>
@@ -120,12 +153,29 @@
       <h2><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h2>
     </section>
     <section class="subscription">
-      <h2 class="visyally-hidden">Подписаться на рассылку.</h2>
+      <h2 class="visually-hidden">Подписаться на рассылку.</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
       <!--Здесь будет форма-->
     </section>
     <!--Здесь будет карта-->
-    <a href="#"><img src="img/map-pin.jpg" width="1200" height="430" alt="Как нас найти"></a>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Адрес главного офиса
+и офлайн-магазина:</h2>
+      <p><img src="img/map-pin.jpg" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+    </section>
+    <section class="feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <h2>Мы обязательно вам ответим!</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <input type="text" name="name" id="feedback-name" value="" placeholder="Как вас зовут?">
+        </br>
+        <input type="email" name="email" id="feedback-email" value="" placeholder="Ваша почта для ответа?">
+        <br>
+        <textarea name="comments" cols="20" rows="4" placeholder="Напишите что нибудь..."></textarea>
+        <br>
+        <button class="button feedback-button" type="submit">Отправить</button>
+      </form>
+    </section>
   </main>
   <footer class="main-footer">
     <ul class="footer-social">
