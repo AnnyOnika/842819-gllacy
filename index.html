@@ -4,6 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин мороженого Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  
 </head>
 
 <body>
@@ -112,7 +116,7 @@
     </section>
     <section class="feature">
       <h2 class="visyally-hidden">Преиумущества</h2>
-      <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
+      <p class="feature-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
       <ul class="feature-list">
         <li class="feature-item">
           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -137,7 +141,12 @@
     <section class="subscription">
       <h2 class="visually-hidden">Подписаться на рассылку.</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <!--Здесь будет форма-->
+      <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+      <label for="subscription-mail" class="visually-hidden">
+      <input type="email" name="email" id="subscription-mail" placeholder="Электронная почта">
+      </label>
+      <button class="button" type="submit">Отправить</button>
+      </form>
     </section>
     <!--Здесь будет карта-->
     <section class="modal modal-map">
@@ -160,7 +169,7 @@
       <li><a href="#">Экологические стандарты</a></li>
     </ul>
     <div class="footer-copyright">
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="#" width="108" height="39" alt="Логотип HTML academy"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML academy"></a>
       <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
     </div>
   </footer>
@@ -168,17 +177,23 @@
   <section class="modal modal-search">
     <h2 class="visyally-hidden">Форма поиска</h2>
     <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+      <label for="user-search" class="visually-hidden">
       <input type="search" id="user-search" placeholder="Что ищем?">
+      </label>
       <input type="submit" name="search" class="submit" value="Поиск">
     </form>
   </section>
   <!--Форма входа в личный кабинет-->
-  <section class="modal modal-link">
+  <section class="modal modal-login">
     <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-      <input type="email" name="login" id="user-email" placeholder="Электронная почта">
+      <label for="user-login" class="visually-hidden">
+      <input type="email" name="login" id="user-login" placeholder="Электронная почта">
+      </label>
       <br>
+      <label for="user-password" class="visually-hidden">
       <input type="password" name="password" id="user-password" placeholder="Пароль">
+      </label>
       <br>
       <button class="button link-button" type="submit">Войти</button>
       <p><a class="restore" href="#">Забыли пароль?</a></p>
@@ -186,15 +201,21 @@
     </form>
   </section>
   <!--Форма обратной связи-->
-  <section class="feedback">
+  <section class="modal modal-feedback">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <h2>Мы обязательно вам ответим!</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <label for="feedback-name" class="visually-hidden">
       <input type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
+      </label>
       <br>
+      <label for="feedback-email" class="visually-hidden">
       <input type="email" name="email" id="feedback-email" value="" placeholder="Ваша почта для ответа?">
+      </label>
       <br>
-      <textarea name="comments" cols="20" rows="4" placeholder="Напишите что нибудь..."></textarea>
+      <label for="comments" class="visually-hidden">
+      <textarea name="comments" id="comments" cols="20" rows="4" placeholder="Напишите что нибудь..."></textarea>
+      </label>
       <br>
       <button class="button feedback-button" type="submit">Отправить</button>
     </form>

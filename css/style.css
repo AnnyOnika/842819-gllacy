@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #859d8f;
+}
+.inner-page {
+	color: #ffffff;
+	background-color: #859d8f; 
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button {
+  font-size: 18px;
+  font-height: 24px;
+  color: #fefefe;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ee5d3e;
+  border-radius: 40px;
+  margin: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(#f26843, #e74b36);
+  border: none;
+  box-shadow: 0 2px 2px #9e4334;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ed7360;
+  background: linear-gradient(#f58669, #ec6f5e);
+  box-shadow: 0 2px 2px #9e4334;
+}
+.button:active {
+  background-color: #db5338;
+  background: linear-gradient(#c73f2c, #e0603e);
+  box-shadow: inset 0px 2px 2px #9e4334; 
+} 
+
+.main-navigation {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #859d8f;
+ }
+
+.site-navigation,
+.user-navigation,
+.sub-menu {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #ffffff;
+  border-bottom: 1px solid rgba(158,178,167, 0.2);
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.sub-menu {
+  display: none;	
+  text-decoration: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-navigation a:active,
+.user-navigation a:hover,
+.user-navigation a:focus,
+.user-navigation a:active {
+  background-color: #f8f7f4;
+  color: #323232;
+  border-bottom: 1px solid rgba(158,178,167, 0.3);
+}
+
+.feature {
+  background-color: #f3e8d3;
+  background-image: url("../img/wafer.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: : 1146px;
+  height: 306px;
+}
+
+.feature-list {
+  list-style: none;
+}
+
+.feature-title {
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+}
+
+.feature-item {
+  text-align: left;
+  list-style: none;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+
+.blog-news {
+  color: #323232;
+  background-color: #ffffff;
+  background-image: url("../img/stawberry.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 560px;
+  height: 220px;
+
+}
+
+.blog-news h2 {
+  font-size: 16px;
+  font-height: 22px;
+  font-weight: 400px; 
+  color: #323232;
+}
+
+.blog-news a {
+  font-size: 24px;
+  font-height: 30px;
+  font-weight: 700px; 
+  text-decoration: underline; 
+  color: #323232;
+}
+
+.subscription {
+  background-image: url("../img/bg-post.svg");
+  background-repeat: no-repeat;
+  background-color: #f8f7f4;
+  font-size: 16px;
+  font-height: 22px;
+  font-weight: 400px;
+  color: #5a5a5a;
+  padding: 20px 30px;
+  width: 560;
+  height: 220px;
+ }
+.subscription input {
+  font: inherit;
+  background-color: transparent;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  color: 999999;
+  padding: 10px 10px;
+}
+.subscription input:focus {
+  border-color: #8fbdec;
+}
+
+.main-footer {
+  background-color: #859d8f;
+  font-size: 13px;
+  font-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.footer-social {
+	list-style: none;
+}
+.more-info {
+	text-align: center;
+	list-style: none;
+    border-bottom: 1px solid rgba(158,178,167, 0.2);
+}
+.more-info a {
+ 	border-bottom: 1px solid rgba(158,178,167, 0.3);
+ 	color: #ffffff;
+}
+.more-info a:hover,
+.more-info a:focus,
+.more-info a:active {
+  color: #ffbc9e;
+}
+.footer-copyright {
+  color: #ffffff;	
+}
+.footer-copyright a {
+	border-bottom: 1px solid rgba(158,178,167, 0.2);
+	color: #ffffff;
+}
+.footer-copyright a:hover,
+.footer-copyright a:focus,
+.footer-copyright a:active {
+  color: #ffbc9e;
+  border-bottom: 1px solid rgba(158,178,167, 0.3);
+
+.modal {
+	color: #323232;
+	background-color: #f8f7f4;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"],
+.search-form input[type="search"] {
+	font: inherit;
+	color: #999999;
+	border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    padding: 10px 10px; 
+}
+.login-form input:focus,
+.search-form input:focus {
+  border-color: #8fbdec;
+}
+.restore,
+.check-in {
+	color: #323232;
+	border-bottom: 1px solid rgba(178,178,178, 0.3);
+}
+
+.restore:hover,
+.restore:focus,
+.restore:active,
+.check-in:hover,
+.check-in:focus,
+.check-in:active {
+	color: #e84d37;
+	border-bottom: 1px solid rgba(249,205,196, 0.3);
+}
+
+
+  
+
+}
