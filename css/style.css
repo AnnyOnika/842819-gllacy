@@ -85,6 +85,12 @@ a {
   border-bottom: 1px solid rgba(158,178,167, 0.3);
 }
 
+.slider-list,
+.top-catalog {
+	list-style: none;
+}
+
+
 .feature {
   background-color: #f3e8d3;
   background-image: url("../img/wafer.jpg");
@@ -179,6 +185,8 @@ a {
 }
 
 .breadcrumbs a {
+	font-size: 14px;
+	line-height: 16px;
 	color: #ffffff;
 	border-bottom: 1px solid rgba(178,178,178, 0.3);
 }
@@ -187,6 +195,52 @@ a {
 .breadcrumbs a:active {
   color: #ffbc9e;
   background-color: 1px solid rgba(158,178,167, 0.3)
+}
+
+.page-title h1 {
+  font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+	color: #ffffff;	
+}
+
+.catalog-list {
+  list-style: none;	
+}
+.catalog-item {
+  background-color: #859d8f;
+}
+.catalog-item-name a {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  border-bottom: 1px solid rgba(158,178,167, 0.3);
+}
+.catalog-item:hover {
+  background-color: #9bafa3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item-price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  text-align: left;
+  background-color: transparent;
+}
+.catalog-item-price-smaller {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-item a:hover {
+	color: #323232;
+	background-color: #ffffff;
 }
 
 .main-footer {
