@@ -162,6 +162,33 @@ a {
   border-color: #8fbdec;
 }
 
+.contacts {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: right;
+}
+.contacts a {
+  font-size: 22px;
+  line-height: 24px;	
+}
+
+.breadcrumbs {
+	list-style: none;
+
+}
+
+.breadcrumbs a {
+	color: #ffffff;
+	border-bottom: 1px solid rgba(178,178,178, 0.3);
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+  background-color: 1px solid rgba(158,178,167, 0.3)
+}
+
 .main-footer {
   background-color: #859d8f;
   font-size: 13px;
@@ -206,7 +233,9 @@ a {
 
 .login-form input[type="email"],
 .login-form input[type="password"],
-.search-form input[type="search"] {
+.search-form input[type="search"],
+.feedback-form input[type="text"]
+.feedback-form input[type="email"] {
 	font: inherit;
 	color: #999999;
 	border: 1px solid #d3d3d2;
@@ -236,4 +265,3 @@ a {
 
   
 
-}
