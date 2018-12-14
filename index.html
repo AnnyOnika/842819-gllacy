@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header wrapper">
     <a class="main-header-logo">
       <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
     </a>
@@ -34,11 +34,7 @@
     <ul class="user-navigation">
       <li><a href="search.html"><span class="search">Поиск</span></a></li>
       <li><a href="login.html"><span class="login-link">Вход</span></a></li>
-      <li><a href="basket.html"><span class="basket">Корзина</span></a>
-        <section class="basket product-basket">
-          <h2 class="visually-hidden">Корзина с мороженым</h2>
-        </section>
-      </li>
+      <li><a href="basket.html"><span class="basket">Корзина</span></a></li>
     </ul>
   </header>
   <main class="container">
@@ -47,6 +43,7 @@
       <p class="contacts">С 10 до 20 ежедневно<br>
         <a href="tel:88124502525"><b>8 812 450-25-25</b></a>
       </p>
+      <div class="wrapper">
       <!--первый слайдер-->
       <ul class="slider-list">
         <li class="slider-1">
@@ -68,21 +65,22 @@
         </li>
       </ul>
     </div>
-    <section class="banner">
+    </div>
+    <section class="banner wrapper">
       <div class="banner-raspberries">
-        <p>Малинка даром!<br>
-          При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+        <h3>Малинка даром!</h3>
+        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
         </p>
-        <!--кнопка Хочу варенье!-->
+        <a class="button">Хочу варенье!</a>
       </div>
       <div class="banner-chokolate">
-        <p>Шоколадки даром!<br>
-          При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+        <h3>Шоколадки даром!</h3>
+        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
         </p>
-        <!--кнопка Хочу шоколадки!-->
+        <a class="button">Хочу шоколадки!</a>
       </div>
     </section>
-    <section class="top-catalog">
+    <section class="top-catalog wrapper">
       <h2 class="visually-hidden">Хиты продаж</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
@@ -115,7 +113,7 @@
         </li>
       </ul>
     </section>
-    <section class="feature">
+    <section class="feature wrapper">
       <h2 class="visyally-hidden">Преимущества</h2>
       <p class="feature-title">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
       <ul class="feature-list">
@@ -135,10 +133,12 @@
         </li>
       </ul>
     </section>
+    <div class="news-subscription wrapper">
     <section class="blog-news">
       <h2>Новое в нашем блоге</h2>
       <h2><a href="#">10 способов сервировки фруктовых щербетов к столу</a></h2>
     </section>
+    <div class="subscription-bg">
     <section class="subscription">
       <h2 class="visually-hidden">Подписаться на рассылку.</h2>
       <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
@@ -149,20 +149,24 @@
       <button class="button" type="submit">Отправить</button>
       </form>
     </section>
+  </div>
+  </div>
     <!--Здесь будет карта-->
-    <section class="modal modal-map">
-      <img src="img/map-pin.jpg" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+    <section class="map">
+      <div class="feedback-map">
       <p class="adress">Адрес главного офиса<br> и офлайн-магазина:<br><span class="adress-bold">ул. Большая Конюшенная<br>19/8, Санкт-Петербург </span><br>
       Для заказов по телефону:<br>
         <span class="adress-bold">8 812 450-25-25</span></span><br>(с 10 до 20 ежедневно)</p>
+        <button class="button feedback-button" type="submit">Форма обратной связи</button>
+    </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer wrapper">
     <ul class="footer-social">
-      <li><a class="social-button twitter" href="#">Твиттер</a></li>
-      <li><a class="social-button instagram" href="#">Инстаграмм</a></li>
-      <li><a class="social-button fb" href="#">Фейсбук</a></li>
-      <li><a class="social-button vk" href="#">Вконтакте</a></li>
+      <li><a class="social-button twitter" href="#"></a></li>
+      <li><a class="social-button instagram" href="#"></a></li>
+      <li><a class="social-button fb" href="#"></a></li>
+      <li><a class="social-button vk" href="#"></a></li>
     </ul>
     <ul class="more-info">
       <li><a class="heart-icon" href="#"><b>Для поставщиков</b></a></li>
@@ -171,8 +175,8 @@
       <li><a href="#">Экологические стандарты</a></li>
     </ul>
     <div class="footer-copyright">
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML academy"></a>
-      <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
+      <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML academy"></a>
+      <p class="made-in">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
     </div>
   </footer>
   <!--модальное окно поиска-->
