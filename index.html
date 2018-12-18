@@ -27,22 +27,22 @@
           </ul>
         </li>
         <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">О компании</a></li>
+        <li><a href="#">О Kомпании</a></li>
       </ul>
-    </nav>
-    <ul class="user-navigation">
+      <ul class="user-navigation">
       <li><a class="search" href="search.html"><span class="visually-hidden">Поиск</span></a></li>
       <li><a class="login-link" href="login.html"><span >Вход</span></a></li>
       <li><a class="basket" href="basket.html"><span>Пусто</span></a></li>
     </ul>
+    </nav>
   </header>
   <main class="container">
     <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
-    <div class="slider">
+    <div class="slider wrapper">
       <p class="contacts">С 10 до 20 ежедневно<br>
         <a href="tel:88124502525"><b>8 812 450-25-25</b></a>
       </p>
-      <div class="wrapper">
+      <div>
       <!--первый слайдер-->
       <ul class="slider-list">
         <li class="slider-1">
@@ -182,9 +182,9 @@
   <section class="modal modal-search">
     <h2 class="visually-hidden">Форма поиска</h2>
     <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-      <label for="user-search" class="visually-hidden">
+      <label for="user-search" class="visually-hidden"></label>
       <input type="search" id="user-search" placeholder="Что ищем?">
-      </label>
+      
       <input type="submit" name="search" class="submit" value="Поиск">
     </form>
   </section>
@@ -192,13 +192,13 @@
   <section class="modal modal-login">
     <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-      <label for="user-login" class="visually-hidden">
+      <label for="user-login" class="visually-hidden"></label>
       <input type="email" name="login" id="user-login" placeholder="Электронная почта">
-      </label>
+      
       <br>
-      <label for="user-password" class="visually-hidden">
+      <label for="user-password" class="visually-hidden"></label>
       <input type="password" name="password" id="user-password" placeholder="Пароль">
-      </label>
+      
       <br>
       <button class="button link-button" type="submit">Войти</button>
       <p><a class="restore" href="#">Забыли пароль?</a></p>
@@ -210,17 +210,14 @@
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <h2>Мы обязательно вам ответим!</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <label for="feedback-name" class="visually-hidden">
+      <label for="feedback-name" class="visually-hidden"></label>
       <input type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
-      </label>
       <br>
-      <label for="feedback-email" class="visually-hidden">
+      <label for="feedback-email" class="visually-hidden"></label>
       <input type="email" name="email" id="feedback-email" value="" placeholder="Ваша почта для ответа?">
-      </label>
       <br>
-      <label for="comments" class="visually-hidden">
+      <label for="comments" class="visually-hidden"></label>
       <textarea name="comments" id="comments" cols="20" rows="4" placeholder="Напишите что нибудь..."></textarea>
-      </label>
       <br>
       <button class="button feedback-button" type="submit">Отправить</button>
     </form>

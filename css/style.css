@@ -90,8 +90,13 @@ input[type="radio"].visually-hidden {
 /*HEADER*/
 .main-header {
   display: flex;
-  justify-content: flex-start;
-  padding-top: 9px;
+  justify-content: space-between;
+  margin-top: 9px;
+  margin-bottom: 2px;
+  min-height: 64px;
+  align-items: center;
+
+  
 }
 .main-header-logo {
   width: 154px;
@@ -100,11 +105,18 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 .main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
   color: #ffffff;
-  background-color: #859d8f;
+  
+  background-color: transparent;
+  
+  
+    
 }
 .site-navigation,
 .user-navigation,
@@ -112,25 +124,112 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 .site-navigation {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-content: center;
   width: 350px;
-  margin-right: 374px;
+  margin-right: 372px;
 }
 .site-navigation a {
+  display: block;
   color: #ffffff;
   border-bottom: 1px solid rgba(158, 178, 167, 0.2);
 }
+
+
 .user-navigation {
+  margin: 0;
+  padding: 0;
   display: flex;
-  margin-top: 22px;
+  min-height: 33px;
   width: 246px;
   justify-content: space-between;
+
+}
+li .search  {
+  position: relative;
+  width: 33px;
+  height: 33px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+
+  
+}
+
+.search::before {
+  content: "";
+  
+  width: 17px;
+  height: 17px; 
+  position: absolute;
+  left: 30%;
+  top: 25%;
+  background-image: url("../img/loupe.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.search:hover::before,
+.search:focus::before,
+.search:active::before {
+  background-image: url("../img/loupe2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: #323232;
+}  
+
+.login-link {
+  position: relative;
+  
+}
+li .login-link {
+  position: relative;
+  width: 93px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  padding: 8px 17px 11px 45px;
+
+}
+.login-link::before {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  left: 19%;
+  top: 23%;
+  background-image: url("../img/entrance.svg");
+  background-repeat: no-repeat;
+}
+ 
+
+.basket {
+  position: relative;
+  padding-left: 33px;
+}
+li .basket {
+  position: relative;
+  width: 100px;
+  height: 33px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 17px 11px 45px;
+  border-radius: 999px;	
+} 
+.basket::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  left: 17%;
+  top: 23%;
+  background-image: url("../img/basket.svg");
+  background-repeat: no-repeat;
 }
 .user-navigation a {
+  display: block;
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
@@ -153,52 +252,6 @@ input[type="radio"].visually-hidden {
 .slider-list,
 .top-catalog {
   list-style: none;
-}
-.search {
-  position: relative;
-  padding-left: 33px; 
-}
-.search::before {
-  content: "";
-  display: block;
-  width: 33px;
-  height: 33px; 
-  position: absolute;
-  left: 0;
-  top: 50%;
-  background-image: url("../img/loupe.svg");
-  background-repeat: no-repeat;
-}
-.login-link {
-  position: relative;
-  padding-left: 33px;
-}
-.login-link::before {
-  content: "";
-  display: block;
-  width: 33px;
-  height: 33px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  background-image: url("../img/entrance.svg");
-  background-repeat: no-repeat;
-}
-
-.basket {
-  position: relative;
-  padding-left: 33px;
-}
-.basket::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 33px;
-  height: 33px;
-  left: 0;
-  top: 50%;
-  background-image: url("../img/basket.svg");
-  background-repeat: no-repeat;
 }
 
 
