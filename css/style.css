@@ -95,8 +95,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 2px;
   min-height: 64px;
   align-items: center;
-
-  
 }
 .main-header-logo {
   width: 154px;
@@ -112,11 +110,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   line-height: 18px;
   color: #ffffff;
-  
   background-color: transparent;
-  
-  
-    
 }
 .site-navigation,
 .user-navigation,
@@ -136,6 +130,8 @@ input[type="radio"].visually-hidden {
   display: block;
   color: #ffffff;
   border-bottom: 1px solid rgba(158, 178, 167, 0.2);
+  vertical-align: middle;
+  
 }
 
 
@@ -146,16 +142,17 @@ input[type="radio"].visually-hidden {
   min-height: 33px;
   width: 246px;
   justify-content: space-between;
-
 }
+.user-navigation a {
+  display: block;
+}
+
 li .search  {
   position: relative;
   width: 33px;
   height: 33px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 999px;
-
-  
 }
 
 .search::before {
@@ -176,13 +173,10 @@ li .search  {
   background-image: url("../img/loupe2.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  color: #323232;
 }  
-
 .login-link {
   position: relative;
-  
-}
+ }
 li .login-link {
   position: relative;
   width: 93px;
@@ -190,7 +184,6 @@ li .login-link {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 999px;
   padding: 8px 17px 11px 45px;
-
 }
 .login-link::before {
   content: "";
@@ -204,7 +197,6 @@ li .login-link {
   background-repeat: no-repeat;
 }
  
-
 .basket {
   position: relative;
   padding-left: 33px;
@@ -248,6 +240,7 @@ li .basket {
   background-color: #f8f7f4;
   color: #323232;
   border-bottom: 1px solid rgba(158, 178, 167, 0.2);
+  border-radius: 999px;
 }
 .slider-list,
 .top-catalog {
