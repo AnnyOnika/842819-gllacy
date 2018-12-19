@@ -89,6 +89,8 @@ input[type="radio"].visually-hidden {
 
 /*HEADER*/
 .main-header {
+  margin: 0 auto;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   margin-top: 9px;
@@ -157,29 +159,12 @@ li .search  {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 999px;
 }
-
-.search::before {
-  content: "";
-  
-  width: 17px;
-  height: 17px; 
-  position: absolute;
-  left: 30%;
+.search svg {
+  position: absolute; 
+  left: 25%;
   top: 25%;
-  background-image: url("../img/loupe.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
-.search:hover::before,
-.search:focus::before,
-.search:active::before {
-  background-image: url("../img/loupe2.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}  
-.login-link {
-  position: relative;
- }
+
 li .login-link {
   position: relative;
   width: 93px;
@@ -188,21 +173,11 @@ li .login-link {
   border-radius: 999px;
   padding: 8px 17px 11px 45px;
 }
-.login-link::before {
-  content: "";
-  display: block;
-  width: 19px;
-  height: 19px;
-  position: absolute;
+.login-link svg {
+  position: absolute; 
   left: 19%;
   top: 23%;
-  background-image: url("../img/entrance.svg");
-  background-repeat: no-repeat;
-}
- 
-.basket {
-  position: relative;
-  padding-left: 33px;
+  fill: #ffffff;
 }
 li .basket {
   position: relative;
@@ -211,17 +186,18 @@ li .basket {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 8px 17px 11px 45px;
   border-radius: 999px;	
-} 
-.basket::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 21px;
-  height: 20px;
+}
+
+.basket svg {
+  position: absolute; 
   left: 17%;
   top: 23%;
-  background-image: url("../img/basket.svg");
-  background-repeat: no-repeat;
+}
+li:hover path,
+li:focus path,
+li:hover circle,
+li:focus circle {
+  fill: #000000;
 }
 .user-navigation a {
   display: block;
@@ -278,6 +254,8 @@ li .basket {
   flex-wrap: wrap;
 } 
 .catalog-list {
+  margin: 0;
+  padding: 0;	
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
