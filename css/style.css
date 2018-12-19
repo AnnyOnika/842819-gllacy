@@ -99,7 +99,7 @@ input[type="radio"].visually-hidden {
 .main-header-logo {
   width: 154px;
   height: 64px;
-  margin-right: 24px;
+  margin-right: 10px;
   display: flex;
 }
 .main-navigation {
@@ -121,9 +121,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
-  width: 350px;
+  width: 349px;
   margin-right: 372px;
 }
 .site-navigation a {
@@ -131,7 +131,9 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   border-bottom: 1px solid rgba(158, 178, 167, 0.2);
   vertical-align: middle;
-  
+  padding: 9px 13px 10px 14px;
+  white-space: nowrap;
+
 }
 
 
@@ -139,7 +141,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   display: flex;
-  min-height: 33px;
+  align-content: center;
+  
   width: 246px;
   justify-content: space-between;
 }
@@ -188,8 +191,8 @@ li .login-link {
 .login-link::before {
   content: "";
   display: block;
-  width: 33px;
-  height: 33px;
+  width: 19px;
+  height: 19px;
   position: absolute;
   left: 19%;
   top: 23%;
@@ -213,8 +216,8 @@ li .basket {
   content: "";
   display: block;
   position: absolute;
-  width: 33px;
-  height: 33px;
+  width: 21px;
+  height: 20px;
   left: 17%;
   top: 23%;
   background-image: url("../img/basket.svg");
