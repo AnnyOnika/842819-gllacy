@@ -292,6 +292,16 @@ li:focus circle {
   flex-direction: column;
   flex-wrap: wrap;
 }
+.catalog-item-hit {
+  background-image: url(../img/hit.svg);
+  background-repeat: no-repeat;
+}
+.catalog-item-name {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 16px;
+}
 .feature {
   background-color: #f3e8d3;
   background-image: url("../img/wafer.jpg");
