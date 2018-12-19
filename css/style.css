@@ -452,6 +452,8 @@ li:focus circle {
 }
 
 .subscription {
+  margin: 0;
+  padding: 0;
   background-color: #f8f7f4;
   font-size: 16px;
   font-height: 22px;
@@ -461,6 +463,17 @@ li:focus circle {
   min-height: 211px;
   border-radius: 15px;
   margin: 5px;
+  padding-left: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+.subscription p {
+  margin: 0;
+  padding: 0;
+  padding-top: 33px;
+  padding-bottom: 35px;
 }
 
 .subscription input {
@@ -470,8 +483,14 @@ li:focus circle {
   border-radius: 5px;
   color: 999999;
   padding: 10px 10px;
+  box-sizing: border-box;
+  width: 368px;
+  height: 44px;
 }
-
+.subscription-form {
+ display: flex;
+ padding-bottom: 35px;	
+}
 .subscription input:focus {
   border-color: #8fbdec;
 }
