@@ -291,8 +291,14 @@ li:focus circle {
   flex-direction: column;
   flex-wrap: wrap;
 }
-.catalog-item-hit {
-  background-image: url(../img/hit.svg);
+
+.catalog-item-hit::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 61px;
+  height: 61px;
+  background-image: url("../img/hit.svg");
   background-repeat: no-repeat;
 }
 .catalog-item-name {
@@ -506,6 +512,8 @@ li:focus circle {
   margin: 0 auto;
 }
 .feedback-map {
+  margin: 0;
+  padding: 0;
   width: 302px;
   height: 305px;
   background-color: #ffffff; 
@@ -517,10 +525,14 @@ li:focus circle {
   margin-right: 27px;
 }
 .feedback-map p {
-  padding-top: 32px;
+  
   padding-left: 25px;
 }
 .adress {
+  margin: 0;
+  padding: 0;
+  padding-top: 32px;
+  padding-bottom: 9px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -528,11 +540,14 @@ li:focus circle {
   background-color: #fdfefe;
 }
 .adress-bold {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #323232;
   background-color: #fdfefe;
+  margin-bottom: 23px;
 }
 
 
@@ -621,21 +636,32 @@ li:focus circle {
 }
 
 .catalog-item-price {
+  margin: 0;
+  padding: 0;
+  font: inherit;	
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
   text-align: left;
   background-color: transparent;
   position: absolute;
-  bottom: -30px;
+  bottom: 8px;
   pointer-events: none;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 .catalog-item-image {
   position: relative;
+  margin: 0;
+  padding: 0;
+  width: 267px;
+  height: 267px;
 }
 .catalog-item-image img {
-  border-radius: 999px;	
+  margin: 0;
+  padding: 0;
+  border-radius: 999px;
+  width: 267px;
+  height: 267px;	
 }
 .catalog-item-price-smaller {
   font-size: 30px;
