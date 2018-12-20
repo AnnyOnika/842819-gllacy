@@ -353,11 +353,16 @@ li:focus circle {
   position: relative;
   padding-left: 50px;
   flex-basis: 50%;
-  position: relative;
   box-sizing: border-box;
   padding-left: 56px;
-  
+  margin-bottom: 10px;
 }
+.feature-item p {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+
 .ice-cream::before {
   background-image: url("../img/ice-cream.svg");
   background-repeat: no-repeat;
