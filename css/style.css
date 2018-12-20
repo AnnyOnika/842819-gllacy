@@ -314,12 +314,12 @@ li:focus circle {
   background-position: 0 0;
   background-repeat: repeat;
   background-size: cover;
-  
+  min-height: 306px;
   border-radius: 15px;
   margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
-  padding: 25px 20px 23px; 
+  padding: 25px 20px 13px; 
  }
 
 .feature-list {
@@ -355,12 +355,16 @@ li:focus circle {
   flex-basis: 50%;
   box-sizing: border-box;
   padding-left: 56px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .feature-item p {
   margin: 0;
   padding: 0;
   padding-top: 10px;
+}
+.feature-item:nth-child(2),
+.feature-item:nth-child(4) {
+  padding-left: 70px; 
 }
 
 .ice-cream::before {
@@ -392,7 +396,7 @@ li:focus circle {
   width: 50px;
   height: 50px;
   position: absolute;
-  left: 0;
+  left: 2%;
 }
 
  .thermometer::before {
@@ -403,7 +407,7 @@ li:focus circle {
   width: 50px;
   height: 50px;
   position: absolute;
-  left: 0;
+  left: 2%;
 }
 .news-subscription {
   display: flex;
