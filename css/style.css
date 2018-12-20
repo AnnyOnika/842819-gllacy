@@ -93,6 +93,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 9px;
   margin-bottom: 2px;
   min-height: 64px;
@@ -311,14 +312,14 @@ li:focus circle {
   background-color: #f3e8d3;
   background-image: url("../img/wafer.jpg");
   background-position: 0 0;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   
   border-radius: 15px;
   margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 20px; 
+  padding: 25px 20px 23px; 
  }
 
 .feature-list {
@@ -326,11 +327,13 @@ li:focus circle {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;	
   list-style: none;
   color: #323232;
+  padding-top: 10px;
 }
 
 .feature-title {
@@ -339,10 +342,11 @@ li:focus circle {
   font-size: 24px;
   line-height: 30px;
   font-weight: 400;
+
   color: #323232;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 29px;
+
 }
 
 .feature-item {
@@ -352,7 +356,7 @@ li:focus circle {
   position: relative;
   box-sizing: border-box;
   padding-left: 56px;
-  padding-right: 33px;
+  
 }
 .ice-cream::before {
   background-image: url("../img/ice-cream.svg");
