@@ -56,7 +56,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   font-size: 18px;
-  font-height: 24px;
+  line-height: 24px;
   font-weight: 700;
   color: #fefefe;
   text-align: center;
@@ -135,7 +135,7 @@ input[type="radio"].visually-hidden {
   display: block;
   color: #ffffff;
   border-bottom: 1px solid rgba(158, 178, 167, 0.2);
-  vertical-align: middle;
+  
   padding: 9px 13px 10px 14px;
   white-space: nowrap;
 }
@@ -316,7 +316,8 @@ li:focus circle {
   background-size: cover;
   border-radius: 15px;
   margin-bottom: 40px;
-  padding: 25px 20px 13px; 
+  padding: 25px 20px 13px;
+
  }
 
 .feature-list {
@@ -325,7 +326,6 @@ li:focus circle {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-basis: 48.8%
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;	
@@ -345,15 +345,12 @@ li:focus circle {
 
 .feature-item {
   position: relative;
-  padding-left: 50px;
-  flex-basis: 50%;
+  
+  flex-basis: 48.8%;
   box-sizing: border-box;
   padding-left: 56px;
   margin-bottom: 12px;
 }
-
-
-
 .ice-cream::before {
   background-image: url("../img/ice-cream.svg");
   background-repeat: no-repeat;
@@ -442,7 +439,7 @@ li:focus circle {
   margin: 0;
   padding: 0;
   font-size: 24px;
-  font-height: 30px;
+  line-height: 30px;
   font-weight: 700px;
   line-height: 30px;
   text-decoration: underline;
@@ -467,7 +464,7 @@ li:focus circle {
   padding: 0;
   background-color: #f8f7f4;
   font-size: 16px;
-  font-height: 22px;
+  line-height: 22px;
   font-weight: 400px;
   color: #5a5a5a;
   min-width: 549px;
@@ -688,7 +685,7 @@ li:focus circle {
 .main-footer {
   background-color: #849d8f;
   font-size: 13px;
-  font-height: 18px;
+  line-height: 18px;
   font-weight: 400;
   color: #ffffff;
   display: flex;
