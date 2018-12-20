@@ -113,7 +113,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   line-height: 18px;
   color: #ffffff;
-  background-color: transparent;
+  
 }
 .site-navigation,
 .user-navigation,
@@ -314,11 +314,8 @@ li:focus circle {
   background-position: 0 0;
   background-repeat: repeat;
   background-size: cover;
-  min-height: 306px;
   border-radius: 15px;
   margin-bottom: 40px;
-  display: flex;
-  flex-wrap: wrap;
   padding: 25px 20px 13px; 
  }
 
@@ -328,6 +325,7 @@ li:focus circle {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-basis: 48.8%
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;	
@@ -342,11 +340,7 @@ li:focus circle {
   font-size: 24px;
   line-height: 30px;
   font-weight: 400;
-
   color: #323232;
-  display: flex;
-  flex-wrap: wrap;
-
 }
 
 .feature-item {
@@ -357,15 +351,8 @@ li:focus circle {
   padding-left: 56px;
   margin-bottom: 12px;
 }
-.feature-item p {
-  margin: 0;
-  padding: 0;
-  padding-top: 10px;
-}
-.feature-item:nth-child(2),
-.feature-item:nth-child(4) {
-  padding-left: 70px; 
-}
+
+
 
 .ice-cream::before {
   background-image: url("../img/ice-cream.svg");
@@ -396,7 +383,7 @@ li:focus circle {
   width: 50px;
   height: 50px;
   position: absolute;
-  left: 2%;
+  left: 0%;
 }
 
  .thermometer::before {
@@ -407,7 +394,7 @@ li:focus circle {
   width: 50px;
   height: 50px;
   position: absolute;
-  left: 2%;
+  left: 0%;
 }
 .news-subscription {
   display: flex;
@@ -430,6 +417,11 @@ li:focus circle {
   flex-direction: column;
   flex-wrap: wrap;
   padding-left: 20px;
+}
+.feature-item p {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
 }
 
 .blog-news h2 {
@@ -834,8 +826,12 @@ li:focus circle {
 .login-form input[type="email"],
 .login-form input[type="password"],
 .search-form input[type="search"],
-.feedback-form input[type="text"] .feedback-form input[type="email"] {
+.feedback-form input[type="text"], 
+.feedback-form input[type="email"],
+.feedback-form textarea {
   font: inherit;
+  font-size: 14px;
+  font-weight: 400;
   color: #999999;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
@@ -864,5 +860,37 @@ li:focus circle {
 }
 
 
+/*МОДАЛКИ*/
+.modal {
+  position: fixed;
 
+  color: #323232;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  
+}
+.modal-search {
+  width: 341px; 
+  padding: 20px 15px;
+  left: 51%;
+  top: 59px;
+}
+.modal-login {
+  width: 227px; 
+  padding: 19px 20px 17px;
+  left: 64%;
+  top: 59px;
+}
+.modal-feedback {
+  width: 478px;
+  padding: 24px 20px 27px;
+  left: 50%;
+  top: 337px;
+}
+.modal-feedback,
+.modal-login,
+.modal-search {
+  display: none;
+} 
 
