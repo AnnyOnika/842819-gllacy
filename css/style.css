@@ -334,6 +334,11 @@ li:focus circle {
   text-align: center;
   margin-top: 13px;
 }
+.catalog-inner .catalog-item {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 40px;
+}
 .feature {
   background-color: #f3e8d3;
   background-image: url("../img/wafer.jpg");
@@ -573,12 +578,13 @@ li:focus circle {
 }
 .site-navigation-current {
   background-color: #d07058;
+  border-radius: 999px;
 }
 .basket-current {
   position: relative;
   padding-left: 30px;
+  display: none;
 }
-
 .basket-current::before {
   content: "";
   display: block;
@@ -590,12 +596,14 @@ li:focus circle {
   background-image: url("../img/basket-red.svg");
   background-repeat: no-repeat;
 }
-
-
+.breadcrumbs-wrapper {
+  display: flex;
+  width: 210px;
+}
 .breadcrumbs {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 
@@ -622,6 +630,9 @@ li:focus circle {
 
 .pagination-list {
   list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
 }
 
 .pagination-item a:hover {
