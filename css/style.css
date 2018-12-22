@@ -791,6 +791,10 @@ li:focus circle {
   left: 51%;
   top: 59px;
 }
+.search-form input[type="search"] {
+  width: 311px;
+  height: 44px;
+}
 .modal-login {
   margin: 0;
   padding: 0;	
@@ -800,15 +804,15 @@ li:focus circle {
   top: 59px;
  }
 .button-help-colums {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
   display: flex;  
   justify-content: space-between;
   align-items: flex-start;
 }
 .login-form .login-help {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -893,9 +897,9 @@ li:focus circle {
   margin-left: 289px;
 
 }
-.modal-feedback/*,
-.modal-login,*/
-/*.modal-search*/ {
+.modal-feedback,
+.modal-login,
+.modal-search {
   display: none;
 } 
 
