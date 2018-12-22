@@ -792,20 +792,92 @@ li:focus circle {
   top: 59px;
 }
 .modal-login {
+  margin: 0;
+  padding: 0;	
   width: 227px; 
-  padding: 19px 20px 17px;
+  padding: 20px 17px 20px 19px;
   left: 64%;
   top: 59px;
+ }
+.login-form .login-help {
+  display: flex;
+}
+.modal-login input[type="email"],
+.modal-login input[type="password"] {
+  margin-bottom: 20px;
 }
 .modal-feedback {
   width: 478px;
-  padding: 24px 20px 27px;
+  padding: 20px 26px 20px 24px;
   left: 50%;
   top: 337px;
 }
-.modal-feedback,
-.modal-login,
-.modal-search {
+.modal-close {
+  font-size: 0;
+  cursor: pointer;
+  width: 18px;
+  height: 17px;
+  position: absolute;
+  top: 14px;
+  right: 14px; 
+  background-color: transparent;
+  border: 0;
+}
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 17px;	
+  background-color: black; 
+}
+.modal-close::before {
+  transform: rotate(45deg);	
+}
+.modal-close::after {
+  transform: rotate(-45deg);	
+}
+.modal-feedback h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 400;
+  width: 267px;
+  height: 44px;
+  padding: 16px 15px 12px 15px;
+  box-sizing: border-box;	
+}
+.textarea {
+  height: 155px;
+}
+.feedback-form textarea {
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+  font-weight: 400;
+  width: 428px;
+  height: 155px;
+  margin-bottom: 25px;
+}
+.feedback-button {
+  display: inline-block;
+  margin-left: 289px;
+
+}
+/*.modal-feedback,*/
+/*.modal-login,*/
+/*.modal-search {
   display: none;
 } 
-
+*/

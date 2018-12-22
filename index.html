@@ -245,15 +245,16 @@
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
       <label for="user-login" class="visually-hidden"></label>
       <input type="email" name="login" id="user-login" placeholder="Электронная почта">
-      
-      <br>
       <label for="user-password" class="visually-hidden"></label>
       <input type="password" name="password" id="user-password" placeholder="Пароль">
-      
-      <br>
       <button class="button link-button" type="submit">Войти</button>
-      <p><a class="restore" href="#">Забыли пароль?</a></p>
-      <p><a class="check-in" href="#">Новая регистрация</a></p>
+      
+      <p class="login-help">
+        <a class="restore" href="#">Забыли пароль</a>
+      </p>
+      <p>
+        <a class="check-in" href="#">Новая регистрация</a>
+      </p>
     </form>
   </section>
   
@@ -262,16 +263,20 @@
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <h2>Мы обязательно вам ответим!</h2>
     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <label for="feedback-name" class="visually-hidden"></label>
-      <input type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
-      <br>
-      <label for="feedback-email" class="visually-hidden"></label>
-      <input type="email" name="email" id="feedback-email" value="" placeholder="Ваша почта для ответа?">
-      <br>
+      <p>
+        <label for="feedback-name" class="visually-hidden"></label>
+        <input type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
+      </p>
+      <p>
+        <label for="feedback-email" class="visually-hidden"></label>
+        <input type="email" name="email" id="feedback-email" value="" placeholder="Ваша почта для ответа?">
+      </p>
+      <p class="textarea">
       <label for="comments" class="visually-hidden"></label>
-      <textarea name="comments" id="comments" cols="20" rows="4" placeholder="Напишите что нибудь..."></textarea>
-      <br>
+      <textarea name="comments" id="comments"  placeholder="Напишите что нибудь..."></textarea>
+      </p>
       <button class="button feedback-button" type="submit">Отправить</button>
+      <button class="modal-close" type="button">Закрыть</button>
     </form>
   </section>
 </body>
