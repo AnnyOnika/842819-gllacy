@@ -10,7 +10,12 @@
 </head>
 
 <body>
-  <header class="main-header wrapper">
+    <input class="visually-hidden" type="radio" id="slider-product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="slider-product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="slider-product-3" name="toggle">
+  <div class="site-wrapper">
+    <div class="container-1">
+    <header class="main-header wrapper">
     <a class="main-header-logo">
       <img src="img/logo.svg" width="154" height="64" alt="Логотип Глейси">
     </a>
@@ -62,27 +67,32 @@
         <a href="tel:88124502525"><b>8 812 450-25-25</b></a>
       </p>
       <div>
-      <!--первый слайдер-->
-      <ul class="slider-list">
-        <li class="slider-1">
-          <img src="img/slider-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
-          <p class="name-slider-1">Крем-брюле и пломбир с малиновым джемом</p>
-          <button class="button button-slider" type="button">Давайте оба!</button>
-        </li>
-        <!--второй слайдер-->
-        <li class="slider-2">
-          <img src="img/slider-2.png" width="1045" height="881" alt="Шоколадный пломбир и лимонный сорбет">
-          <p class="name-slider-2">Шоколадный пломбир и лимонный сорбет</p>
-          <button class="button button-slider" type="button">Давайте оба!</button>
-        </li>
-        <!--третий слайдер-->
-        <li class="slider-3">
-          <img src="img/slider-3.png" width="1045" height="881" alt="Пломбир с помадкой и клубничный щербет">
-          <p class="name-slider-3">Пломбир с помадкой и клубничный щербет</p>
-          <button class="button button-slider" type="button">Давайте оба!</button>
-        </li>
-      </ul>
-    </div>
+        <div class="slider-controls">
+            <label for="slider-product-1">Первый</label>
+            <label for="slider-product-2">Второй</label>
+            <label for="slider-product-3">Третий</label>
+        </div>
+        <ul class="slider-list">
+            <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">
+                Крем-брюле и пломбир с малиновым джемом
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">
+                Шоколадный пломбир и лимонный сорбет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">
+                Пломбир с помадкой и клубничный щербет
+              </h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+        </ul>
+      </div>
     </div>
     <section class="banner wrapper">
       <div class="banner-raspberries">
@@ -278,6 +288,8 @@
       <button class="modal-close" type="button">Закрыть</button>
     </form>
   </section>
+  </div>
+</div>
 </body>
 
 </html>
