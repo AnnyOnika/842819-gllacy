@@ -45,16 +45,12 @@ body {
 }
 
 .site-wrapper::after {
-  background-image: url("img/slider3.png");
+  background-image: url("img/slider-3.png");
 }
 .content-wrapper {
   margin: auto;
   width: 1200px;
   padding: 0 20px;
-}
-a {
-  color: #ffffff;
-  text-decoration: none;
 }
 
 img {
@@ -75,6 +71,10 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+.link {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .button {
@@ -236,8 +236,6 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin-top: 9px;
   margin-bottom: 2px;
   min-height: 64px;
@@ -249,12 +247,12 @@ input[type="radio"].visually-hidden {
   width: 154px;
   height: 64px;
   margin-right: 10px;
-  display: flex;
 }
 
 .main-navigation {
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   font-size: 16px;
   font-weight: 700;
@@ -281,10 +279,9 @@ input[type="radio"].visually-hidden {
 }
 .navigation-item {
   position: relative;
-  margin: 10px;  
 }
 .navigation-item:hover .popup {
-  display: none;
+  display: block;
 }
 .popup {
   position: absolute;
@@ -672,7 +669,6 @@ li:focus circle {
   padding: 0;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400px;
   color: #323232;
 }
 
@@ -686,7 +682,6 @@ li:focus circle {
   padding: 0;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 700px;
   line-height: 30px;
   text-decoration: underline;
   color: #323232;
@@ -713,7 +708,6 @@ li:focus circle {
   background-color: #f8f7f4;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400px;
   color: #5a5a5a;
   min-width: 549px;
   min-height: 211px;
@@ -736,7 +730,7 @@ li:focus circle {
   background-color: #ffffff;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
-  color: 999999;
+  color: #999999;
   padding: 15px 15px 13px 15px;
   box-sizing: border-box;
   width: 368px;
@@ -775,50 +769,43 @@ li:focus circle {
   width: 302px;
   height: 305px;
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
   border-radius: 15px;
   margin-top: 63px;
   margin-right: 27px;
   padding: 31px 25px 32px;
-}
-
-.adress {
-  margin: 0;
-  padding: 0;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   color: #323232;
-  background-color: #fdfefe;
+  display: flex;
+  flex-direction: column;
 }
+.feedback-map p {
+  margin: 0;
+  padding: 0;
+}
+.address {
+  margin: 0;
+  padding: 0;
+  width: 148px;
 
-.adress-bold,
+}
+.address-bold,
 .tel-bold {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #323232;
-  background-color: #fdfefe;
 }
 
-.adress-bold {
-  display: inline-block;
-  padding-bottom: 18px;
+.address-bold {
+  margin-bottom: 23px;
 }
-
-.tel-bold {
-  margin-top: 6px;
-  display: inline-block;
-}
-
 .feedback-button {
   margin-top: auto;
 }
-
-
 
 
 /*CATALOG*/
@@ -881,8 +868,7 @@ li:focus circle {
 .breadcrumbs a:focus,
 .breadcrumbs a:active {
   color: #ffbc9e;
-  background-color: 1px solid rgba(158, 178, 167, 0.3)
-}
+}  
 
 .page-title h1 {
   font-size: 35px;
