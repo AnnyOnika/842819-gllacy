@@ -257,7 +257,7 @@ input[type="radio"].visually-hidden {
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   font-size: 16px;
   font-weight: 700;
@@ -276,12 +276,26 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  /*justify-content: space-around;*/
   align-items: center;
   width: 377px;
-  min-height: 64px;
-  margin-right: 358px;
-
+  /*min-height: 64px;
+  margin-right: 358px;*/
+}
+.navigation-item {
+  position: relative;
+  margin: 10px;  
+}
+.navigation-item:hover .popup {
+  display: none;
+}
+.popup {
+  position: absolute;
+  display: none;
+  top: 100%;
+}
+.popup-left {
+  left: 0;
 }
 
 .site-navigation a {
@@ -375,13 +389,13 @@ li:focus circle {
 }
 
 .sub-menu {
-  display: none;
   margin: 0;
   padding: 0;
   width: 143px;
   box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
 }
+
 
 .sub-menu a {
   font: inherit;
