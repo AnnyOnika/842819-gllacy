@@ -1103,6 +1103,7 @@ li:focus circle {
   padding: 20px 26px 20px 24px;
   left: 50%;
   top: 337px;
+  z-index: 29;
 }
 
 .modal-close {
@@ -1154,4 +1155,8 @@ li:focus circle {
   height: 44px;
   padding: 16px 15px 12px 15px;
   box-sizing: border-box;
+}
+.feedback-form textarea {
+  width: 428px;
+  height: 155px;
 }
