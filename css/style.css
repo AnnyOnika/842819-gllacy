@@ -25,7 +25,7 @@ body {
 }
 
 .site-wrapper {
-  min-width: 1200px;
+  margin: auto;
   background-color: #849d8f;
   background-image: url("../img/slider-1.png");
   background-repeat: no-repeat;
@@ -41,13 +41,15 @@ body {
 }
 
 .site-wrapper::before {
-  background-image: url("img/slider-item2.png");
+  background-image: url("img/slider-2.png");
 }
 
 .site-wrapper::after {
-  background-image: url("img/slider-item3.png");
+  background-image: url("img/slider3.png");
 }
 .content-wrapper {
+  margin: auto;
+  width: 1200px;
   padding: 0 20px;
 }
 a {
