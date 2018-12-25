@@ -82,25 +82,25 @@
             </a>
             <section class="modal modal-basket popup">
               <form class="basket-form">
-              <table class="product-basket-list">
-                <tr class="products-basket-item">
-                  <td><button class="modal-close" type="button">Закрыть</button></td>
-                  <td><img src="img/basket-icecream-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                  <td>Пломбир с апельсиновым джемом</td>
-                  <td>1,5 кг x <span>200 руб.</span></td>
-                  <td>300 руб.</td>
-                </tr>
-                <tr class="products-basket-item">
-                  <td><button class="modal-close" type="button">Закрыть</button></td>
-                  <td><img src="img/basket-icecream-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td>1,5 кг x <span>300 руб.</span></td>
-                  <td>450 руб.</td>
-                </tr>
-              </table>
-              <p class="total"><b>Итого: 750р.</b></p>
-              <a class="button basket-button link" href="#">Оформить заказ</a>
-             </form>
+                <table class="product-basket-list">
+                  <tr class="products-basket-item">
+                    <td><button class="modal-close" type="button">Закрыть</button></td>
+                    <td><img src="img/basket-icecream-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                    <td>Пломбир с апельсиновым джемом</td>
+                    <td>1,5 кг x <span>200 руб.</span></td>
+                    <td>300 руб.</td>
+                  </tr>
+                  <tr class="products-basket-item">
+                    <td><button class="modal-close" type="button">Закрыть</button></td>
+                    <td><img src="img/basket-icecream-2.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td>1,5 кг x <span>300 руб.</span></td>
+                    <td>450 руб.</td>
+                  </tr>
+                </table>
+                <p class="total"><b>Итого: 750р.</b></p>
+                <a class="button basket-button link" href="#">Оформить заказ</a>
+              </form>
             </section>
           </li>
         </ul>
@@ -110,13 +110,11 @@
       <p class="contacts">С 10 до 20 ежедневно<br>
         <a class="link" href="tel:88124502525"><b>8 812 450-25-25</b></a>
       </p>
-      
-        <ul class="breadcrumbs">
-          <li><a class="link" href="index.html">Главная</a></li>
-          <li><a class="link" href="catalog.html">Каталог</a></li>
-          <li class="breadcrumbs-current">Сливочное</li>
-        </ul>
-      
+      <ul class="breadcrumbs">
+        <li><a class="link" href="index.html">Главная</a></li>
+        <li><a class="link" href="catalog.html">Каталог</a></li>
+        <li class="breadcrumbs-current">Сливочное</li>
+      </ul>
       <h1 class="page-title">Сливочное мороженое</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -377,7 +375,85 @@
       </div>
     </footer>
   </div>
-
+  <section class="filters">
+    <h2 class="visually-hidden">Фильтр товаров</h2>
+    <form class="filter" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="sort">
+        <legend>Сортировка:</legend>
+        <select name="sort-list">
+          <option value="by-popularity">по популярности</option>
+          <option value="cheap-first">сначала недорогие</option>
+          <option value="expensive-first">сначала дорогие</option>
+          <option value="by-fat">по жирности</option>
+        </select>
+      </fieldset>
+      <fieldset class="filter-range">
+        <legend>Цена:</legend>
+        <div class="price-controls">
+          <label class="min-price">
+            <input type="text" name="min-price" value="100">руб.
+          </label>
+          <label class="max-price">
+            <input type="text" name="min-price" value="500">руб.
+          </label>
+        </div>
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="range-toggle range-toggle-min"></div>
+          <div class="range-toggle range-toggle-max"></div>
+        </div>
+      </fieldset>
+      <fieldset class="fat">
+        <legend>Жирность:</legend>
+        <ul>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="fat" value="0%" id="fat-filter-0">
+            <label for="fat-filter-0">0%</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="fat" value="to 10%" id="filter-to-10" checked>
+            <label for="fat-filter-to-10">до 10%</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden" type="radio" name="fat" value="to 30%" id="fat-filter-to-30">
+            <label for="fat-filter-to-30">до 30%</label>
+          </li>
+          <li class="ffilter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="fat" value="from 30%" id="fat-filter-from-30">
+            <label for="fat-filter-from-30">выше 30%</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="filters">
+        <legend>Наполнители:</legend>
+        <ul>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate" checked>
+            <label for="filter-chocolate">шоколадные</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar" id="filter-sugar" checked>
+            <label for="filter-sugar">сахарные присыпки</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruits" id="filter-fruits">
+            <label for="filter-fruits">фрукты</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrup" id="filter-syrup">
+            <label for="filter-syrup">сиропы</label>
+          </li>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jam" id="filter-jam">
+            <label for="filter-jam">джемы</label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="filter-btn" type="submit">Применить</button>
+    </form>
+  </section>
 </body>
 
 </html>
