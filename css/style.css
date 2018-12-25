@@ -308,11 +308,12 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation a {
-  display: block;
+  display: flex;
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+  padding-left: 8px;
 }
 
 li .search {
@@ -478,12 +479,12 @@ li:focus circle {
 }
 
 .catalog-item {
-
   flex-basis: 267px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
+
 
 .catalog-item-name a {
   font-size: 16px;
@@ -494,7 +495,7 @@ li:focus circle {
 }
 
 .catalog-item:hover {
-
+ 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -843,18 +844,26 @@ li:focus circle {
   background-repeat: no-repeat;
 }
 
-.breadcrumbs-wrapper {
-  display: flex;
-  width: 210px;
-}
-
 .breadcrumbs {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
-
-
+.breadcrumbs li {
+  position: relative;
+  margin-right: 21px;
+}
+.breadcrumbs li::after {
+  content: "»";
+  position: absolute;
+  top: 0;
+  right: -14px;
+}
+.breadcrumbs-current::after {
+  display: none;
+}
 .breadcrumbs a {
   font-size: 14px;
   line-height: 16px;
@@ -877,14 +886,47 @@ li:focus circle {
 
 .pagination-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: flex-end;
   text-align: right;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
-
+.pagination-item {
+  margin-right: 4px;
+}
+.pagination-item a {
+  display: block;
+  padding: 4px 8px;
+  border-radius: 50%;
+  line-height: 18px;
+}
 .pagination-item a:hover {
   color: #323232;
   background-color: #ffffff;
+}
+.pagination-item-previous a {
+  width: 23px;
+  height: 23px;
+  margin-right: 0;
+
+  background-image: url("../img/icon-left-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 21% 50%;
+}
+
+.pagination-item-next a {
+  width: 21px;
+  height: 23px;
+
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+.pagination-item-next a:hover {
+  color: #323232;
 }
 
 /*CATALOG-end*/
