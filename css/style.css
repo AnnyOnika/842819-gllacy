@@ -1213,4 +1213,31 @@ li:focus circle {
   height: 155px;
 }
 
+/*ФИЛЬТРЫ*/
+.filters {
+  margin-bottom: 40px;
+}
+.filter {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.filters fieldset {
+  margin: 0;
+  padding: 0;
 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+
+  border: none;
+}
+.filters legend {
+  font-size: 14px;
+  line-height: 16px;
+}
+.filter-option {
+  list-style: none;
+}
