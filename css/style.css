@@ -50,7 +50,7 @@ body {
 .content-wrapper {
   margin: auto;
   width: 1200px;
-  padding: 0 20px;
+  padding: 0 27px;
 }
 
 img {
@@ -115,9 +115,6 @@ input[type="radio"].visually-hidden {
 
 .slider {
   position: relative;
-
-  padding-top: 220px;
-
   text-align: center;
   color: #ffffff;
 }
@@ -137,7 +134,7 @@ input[type="radio"].visually-hidden {
   width: 700px;
   margin: 0 auto;
   margin-bottom: 27px;
-
+  margin-top: 279px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;
@@ -179,14 +176,13 @@ input[type="radio"].visually-hidden {
   bottom: 63px;
   left: 0;
   z-index: 30;
-
   font-size: 0;
 }
 
 .slider-controls label {
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 21px;
+  height: 21px;
   margin-right: 8px;
 
   vertical-align: top;
@@ -229,18 +225,21 @@ input[type="radio"].visually-hidden {
 #slider-product-3:checked~.site-wrapper label[for="slider-product-3"] {
   background-color: #ffffff;
 }
-
+.contacts .slide {
+  position: absolute;
+  top: 0; 
+  right: 26px;
+}
 /*HEADER*/
 
 .main-header {
   margin: 0 auto;
   padding: 0;
   display: flex;
-  margin-top: 9px;
+  padding-top: 9px;
   margin-bottom: 2px;
   min-height: 64px;
   align-items: center;
-
 }
 
 .main-header-logo {
@@ -258,7 +257,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   line-height: 18px;
   color: #ffffff;
-
+  padding-left: 20px;
 }
 
 .site-navigation,
@@ -271,11 +270,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   display: flex;
-  /*justify-content: space-around;*/
   align-items: center;
   width: 377px;
-  /*min-height: 64px;
-  margin-right: 358px;*/
 }
 .navigation-item {
   position: relative;
@@ -287,6 +283,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   display: none;
   top: 100%;
+  z-index: 3;
 }
 .popup-left {
   left: 0;
@@ -810,12 +807,13 @@ li:focus circle {
 
 /*CATALOG*/
 .contacts {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
   text-align: right;
 }
-
 .contacts a {
   font-size: 22px;
   line-height: 24px;
@@ -900,7 +898,7 @@ li:focus circle {
   display: flex;
   justify-content: space-between;
   margin-top: 1px;
-  margin-bottom: 28px;
+  padding-bottom: 28px;
 }
 
 .footer-social {
@@ -1087,10 +1085,13 @@ li:focus circle {
   flex-direction: column;
   align-items: flex-start;
   font: inherit;
+  color: #323232;
   font-size: 13px;
   line-height: 24px;
 }
-
+.button-help-colums a {
+  color: #323232;
+}
 .modal-login input[type="email"],
 .modal-login input[type="password"] {
   margin-bottom: 20px;
@@ -1160,3 +1161,12 @@ li:focus circle {
   width: 428px;
   height: 155px;
 }
+.modal-basket {
+  margin: 0;
+  padding: 0;
+  width: 540px;
+  padding: 20px;
+  left: 64%;
+  top: 59px;
+}  
+
