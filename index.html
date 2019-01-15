@@ -25,8 +25,7 @@
               <a class="link" href="catalog.html">Каталог</a>
               <ul class="sub-menu popup popup-left">
                 <li><a class="link" href="#">Новинки</a></li>
-                <li><a class="link" href="#">Сливочное</a></li>
-                <li><a class="link" href="#">Сливочное</a></li>
+                <li><a class="link" href="catalog.html">Сливочное</a></li>
                 <li><a class="link" href="#">Щербеты</a></li>
                 <li><a class="link" href="#">Фруктовый лед</a></li>
                 <li><a class="link" href="#">Мелорин</a></li>
@@ -47,7 +46,7 @@
                     <path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
                   </svg>
                 </a>
-              <section class="modal modal-search popup">
+              <section class="popup modal modal-search">
                 <h2 class="visually-hidden">Форма поиска</h2>
                 <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                   <label for="user-search" class="visually-hidden"></label>
@@ -66,7 +65,7 @@
                     </g>
                   </svg>
                 </a>
-              <section class="modal modal-login popup">
+              <section class="popup modal-login modal">
                 <h2 class="visually-hidden">Форма входа в личный кабинет</h2>
                 <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                   <label for="user-login" class="visually-hidden"></label>
@@ -239,14 +238,15 @@
           </div>
         </div>
       </main>
+    </div>
       <section class="map">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="feedback-map">
           <p class="address">Адрес главного офиса и офлайн-магазина:</p>
           <p class="address-bold">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-          <p>Для заказов по телефону:</p>
+          <p class="small">Для заказов по телефону:</p>
           <p class="tel-bold">8 812 450-25-25</p>
-          <p>(с 10 до 20 ежедневно)</p>
+          <p class="small">(с 10 до 20 ежедневно)</p>
           <button class="button feedback-button" type="submit">Форма обратной связи</button>
         </div>
       </section>
@@ -293,22 +293,30 @@
                 </a>
             </li>
           </ul>
-          <ul class="more-info">
-            <li class="info-item">
-              <a class="heart-icon link" href="#">
+          <div class="info-wrapper">
+            <div class="col-left">
+              <ul class="more-info">
+                <li class="info-item">
+                  <a class="heart-icon link" href="#">
                   <b>Для поставщиков</b>
                 </a>
-            </li>
-            <li class="info-item">
-              <a class="link" href="#">Наши документы</a>
-            </li>
-            <li class="info-item">
-              <a class="link" href="#">О производстве</a>
-            </li>
-            <li class="info-item">
-              <a class="link" href="#">Экологические стандарты</a>
-            </li>
-          </ul>
+                </li>
+                <li class="info-item">
+                  <a class="link" href="#">О производстве</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-right">
+              <ul class="more-info">
+                <li class="info-item">
+                  <a class="link" href="#">Наши документы</a>
+                </li>
+                <li class="info-item">
+                  <a class="link" href="#">Экологические стандарты</a>
+                </li>
+              </ul>
+          </div>
+        </div>
           <div class="footer-copyright">
             <a class="logo-htmlacademy link" href="https://htmlacademy.ru/intensive/htmlcss">
                 <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML academy">
@@ -338,7 +346,7 @@
           <button class="modal-close" type="button">Закрыть</button>
         </form>
       </section>
-    </div>
+    
   </div>
 </body>
 
