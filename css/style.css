@@ -226,12 +226,23 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-.contacts .slide {
-  position: absolute;
-  top: 0; 
-  right: 26px;
-}
 
+.contacts {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: right;
+}
+.contacts a {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: right;
+}
 /*HEADER*/
 
 .main-header {
@@ -657,26 +668,31 @@ li:focus circle {
 .blog-news {
   margin: 0;
   padding: 0;
-  color: #323232;
   background-color: #ffffff;
   background-image: url("../img/stawberry.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
   background-size: cover;
-  flex-basis: 560px;
-  min-height: 220px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  padding: 26px 20px;
+
+  display: flex; 
+
+     flex-basis: 560px;
+ min-height: 220px;
+ border-radius: 15px;
+
+flex-direction: column;
+ padding-left: 20px;
+  padding-top: 26px;
 }
 
 .blog-news h2 {
+  display: block;
   margin: 0;
   padding: 0;
+  
+  color: #323232;
   font-size: 16px;
   line-height: 22px;
-  color: #323232;
+  font-weight: 400;
 }
 
 .blog-news h3 {
@@ -687,47 +703,54 @@ li:focus circle {
 .blog-news a {
   margin: 0;
   padding: 0;
+  display: block;
+  width: 281px;
+  color: #323232;
   font-size: 24px;
   line-height: 30px;
+  font-weight: 700;
   text-decoration: underline;
-  color: #323232;
-  width: 281px;
-  display: block;
+
 }
 
 .subscription-bg {
-  background-image: url("../img/bg-post.svg");
-  background-repeat: no-repeat;
-  background-color: #f8f7f4;
-  background-size: cover;
-  flex-basis: 560px;
-  min-height: 220px;
-  border-radius: 15px;
-  display: flex;
-}
+    background-image: url("../img/bg-post.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    display: flex;
+    width: 560px;
+    height: 220px;
+
+}
 .subscription {
-  margin: 0;
+
+  display: flex;
+
+          flex-direction: column;
   padding: 0;
+  margin: 0;
   background-color: #f8f7f4;
-  font-size: 16px;
-  line-height: 22px;
   color: #5a5a5a;
-  min-width: 549px;
+  background-position: 0 0;
+
+      flex-basis: 549px;
   min-height: 211px;
   border-radius: 15px;
-  padding-left: 20px;
-  display: flex;
-  flex-direction: column;
   margin: 5px;
-}
+  padding-left: 20px;
+  padding-right: 22px;
 
-.subscription p {
-  margin: 0;
-  padding: 0;
-  padding-top: 33px;
-  padding-bottom: 35px;
-}
+          box-sizing: border-box;
+  }
+
+  .subscription p {
+    
+    margin: 0;
+    padding: 0;
+    padding-top: 33px;
+    padding-bottom: 35px;
+  }
 
 .subscription input {
   font: inherit;
@@ -755,7 +778,6 @@ li:focus circle {
 .button-subscription {
   padding-right: 21px;
 }
-
 .map {
   background-image: url("../img/map-pin.jpg");
   background-repeat: no-repeat;
@@ -822,7 +844,7 @@ li:focus circle {
   text-align: right;
   position: absolute;
   top: 75px;
-  right: 120px;
+  right: 0px;
 }
 .contacts-inner a {
   font-size: 22px;
